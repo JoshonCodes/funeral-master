@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+audio {
+  display: none;
+}
+:root {
+  font-size: 16px;
+}
+
+html {
+  font-family: 'Rubik';
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.head {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 3rem 0 0 0;
+}
+
+.hero-image img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-details {
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+.hero-details h3 {
+  margin-top: 1rem;
+  color: #008000;
+}
+
+.age {
+  margin-bottom: 45px;
+}
+
+.bio {
+  text-align: center;
+  margin: 40px;
+  padding: 30px;
+  line-height: 35px;
+  font-size: 25px;
+}
+
+.content {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+
+.life-images {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.life-images img {
+  margin: 1rem 0;
+  border-radius: 0.3rem;
+}
+
+.burial-heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.arrange {
+  text-align: center;
+  margin: 40px;
+  padding: 30px;
+  line-height: 35px;
+  font-size: 25px;
+}
+/****
+ * I changed this to a flex, so that the form and the responses are two-column.
+ ****/
+.condolence-section {
+  margin: 4rem 0;
+  /* display: flex;
+	justify-content: space-between; */
+}
+/****
+ * Added this, in order to make the columns even. 
+ ****/
+/* .condolence-section > div {
+	width: 45%;
+} */
+.condolence-section h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  /***
+   * Added a margin here, so the messages title moved in a bit.
+   ***/
+  margin: 1rem 2rem;
+}
+
+/****
+ * The following condolence-section and condolences are new. 
+ ****/
+.condolence-section .results-container {
+  background: white;
+}
+.condolence-section .condolences {
+  padding: 15px;
+}
+.condolences .message {
+  display: block;
+}
+.condolences .name {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+/****
+ * New to here.
+ ****/
+
+.hero-chat {
+  margin: 2rem 0 0 0;
+}
+
+.hero-chat input,
+textarea {
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+.hero-chat textarea {
+  font-family: 'Rubik';
+  resize: none;
+}
+
+.hero-chat textarea::placeholder {
+  font-size: 1rem;
+}
+
+.condolence-section button {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: #033d37;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.see-more {
+  width: 30%;
+  background-color: #033d37;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.see-more:hover {
+  background-color: rgb(85, 85, 85);
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 20px;
+  }
+
+  body {
+    width: 80%;
+  }
+
+  .life-images {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0 0 0;
+  }
+
+  .life-images img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+
+  .life-images img {
+    width: 22%;
+  }
+
+  .condolence-section {
+    /* width: 60%; */
+    margin: 4rem auto;
+  }
+
+  .condolence-section button:hover {
+    background-color: rgb(85, 85, 85);
+  }
+}
+
+.showOnClick {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 375px) {
+  img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+  }
+
+  .life-images {
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .bio {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .arrange {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .see-more {
+    width: 50%;
+    padding: 12px;
+  }
+}
+
+/* 
+  GI'S CODE 
+*/
+
+.flex_input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 1%;
+}
+
+.condolence {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #fcfcfc;
+  box-shadow: rgb(224, 224, 224) 4px 4px 15px;
+  border-radius: 15px;
+}
+
+.condolence:nth-child(even) {
+  background-color: rgb(221, 221, 221);
+}
+
+.condolence .message {
+  padding: 5px;
+  color: rgb(79, 80, 88);
+}
+
+.condolence .name {
+  color: rgb(35, 72, 77);
+  text-transform: capitalize;
+}
+
+.condolence .name::before {
+  content: '-- ';
+}
+.condolence .name::after {
+  content: ' --';
+}
+
+.condolence-section h3 {
+  background: rgb(47, 56, 68);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 490px) {
+  .flex_input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5%;
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Funeral</title>
+  </head>
+
+  <body>
+    <section class="head">
+      <div class="hero-details">
+        <h1>In loving memory</h1>
+        <h3>Sam-Ayara Prince</h3>
+      </div>
+      <div class="hero-image">
+        <img src="img/FB_IMG_15850536408874442.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="bio">
+      <p class="age">Age: 56</p>
+      He was born July 6th 1964
+      <br />
+      survived with wife, children and Family Members
+    </section>
+
+    <button class="see-more">See More</button>
+
+    <section class="showOnClick">
+      <h3 class="content">His Life In Pictures</h3>
+
+      <div class="life-images">
+        <img src="img/Untitled-1.jpg" alt="" />
+        <img src="img/Untitled-2.jpg" alt="" />
+        <img src="img/Untitled-3.jpg" alt="" />
+        <img src="img/Untitled-4.jpg" alt="" />
+        <img src="img/Untitled-5.jpg" alt="" />
+        <img src="img/Untitled-6.jpg" alt="" />
+        <img src="img/Untitled-7.jpg" alt="" />
+        <img src="img/Untitled-8.jpg" alt="" />
+        <img src="img/Untitled-9.jpg" alt="" />
+        <img src="img/Untitled-10.jpg" alt="" />
+        <img src="img/Untitled-11.jpg" alt="" />
+        <img src="img/Untitled-12.jpg" alt="" />
+        <img src="img/Untitled-13.jpg" alt="" />
+        <img src="img/Untitled-14.jpg" alt="" />
+        <img src="img/Untitled-15.jpg" alt="" />
+        <img src="img/Untitled-16.jpg" alt="" />
+        <img src="img/Untitled-17.jpg" alt="" />
+        <img src="img/Untitled-18.jpg" alt="" />
+        <img src="img/Untitled-19.jpg" alt="" />
+        <img src="img/Untitled-20.jpg" alt="" />
+        <img src="img/Untitled-21.jpg" alt="" />
+        <img src="img/Untitled-22.jpg" alt="" />
+      </div>
+
+      <section>
+        <h3 class="burial-heading">Burial Arrangement</h3>
+
+        <p class="arrange">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          <br />
+          Consequuntur quis repellat repudiandae sequi sed nesciunt autem,
+          <br />
+          magnam a vitae! Commodi.
+        </p>
+      </section>
+
+      <section class="condolence-section">
+        <div class="results-container">
+          <h3>Messages of Condolence</h3>
+          <div class="condolences"></div>
+        </div>
+
+        <div class="form-container">
+          <h3>Share your condolence message</h3>
+          <form id="contact" name="contact" method="POST">
+            <div class="hero-chat">
+              <div class="flex_input">
+                <input
+                  type="text"
+                  class="space"
+                  required
+                  placeholder="Name"
+                  id="name"
+                  name="name"
+                />
+                <input
+                  type="text"
+                  class="space"
+                  required
+                  placeholder="Phone No"
+                  id="phone"
+                  name="phone"
+                />
+              </div>
+              <div class="txtarea">
+                <textarea
+                  name="message"
+                  id="message-content"
+                  cols="30"
+                  rows="10"
+                  required
+                  placeholder="Kindly Enter Your Wishes and Message"
+                  name="Kindly Enter Your Wishes and Message"
+                ></textarea>
+                <div class="btnwrap">
+                  <button type="submit" class="send">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <audio
+      loop
+      controls
+      type="audio/mp3"
+      id="playAudio"
+      src="audio/how_great_thou_art_with_lyrics_performed_by_chris_rice_mp3_34125.mp3"
+    ></audio>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script> -->
+
+    <!-- Add Firebase products that you want to use -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-firestore.js"></script> -->
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

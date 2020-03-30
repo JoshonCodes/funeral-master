@@ -1,0 +1,12 @@
+- form validation
+- action submit 
+- hover mode
+- focus mode
+- fix avatar on desktop
+- fix the body text width
+- make the images performant
+- run lighthouse accessment tool
+- alt text images
+- test on physical phone
+- deploy on Netlify
+- send MD mail.
